@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    margin: 50px;
+} */
+
+.lang{
+    text-align: center;
+}
+
+.bold{
+    font-weight: 600;
+}
