@@ -9,41 +9,294 @@
 </head>
 
 <body>
-    <div class="lang">
-        <h1>JavaScript learning 😍</h1>
-    </div>
-    <div class="topics">
-        <ol>
-            <!-- Variables & Data Types -->
-            <li class="topic">
-                Variables & Data Types
-                <ul class="subtopics">
-                    <li>
-                        <span class="bold">Console.log-</span>
-                        <span>Console.log is used to (print) a message to the console.</span>
-                        <p class="bold">👉🏻 Console.log("Hello coders");</p>
-                    </li>
-                </ul>
-            </li>
+    <header>
+        <div class="lang">
+            <h1 id="head">JavaScript learning 😍</h1>
+        </div>
+    </header>
 
-            <!-- Operators & Conditional Statements -->
-            <li class="topic">Operators & Conditional Statements</li>
+    <main>
+        <div class="chapters">
+            <ol>
+                <!-- Variables & Data Types -->
+                <li>
+                    <div class="chapterName">
+                        <h3>Variables & Data Types</h3>
+                    </div>
 
-            <!-- Loops & Strings -->
-            <li class="topic">Loops & Strings</li>
-            <li class="topic">Arrays</li>
-            <li class="topic">Functions</li>
-            <li class="topic">Classes & Objects</li>
-            <li class="topic">Callbacks,Promises & Async-await</li>
-            <li class="topic">Fetch API</li>
-            <li class="topic">Events in JS</li>
-            <li class="topic">DOM - Part 1</li>
-            <li class="topic">DOM - Part 2</li>
-            <li class="topic">Project - Building Game : Stone, Paper & Scissors</li>
-        </ol>
-    </div>
+                    <ul>
+                        <!-- Variables -->
+                        <li>
+                            <div class="topic">
+                                <h4>Variables-</h4>
+                                <p>A variable is a container for a value, like a number we might use in a sum, or a
+                                    string that we might use as part of a sentence.</p>
 
-    <script src="Javascript/script.js"></script>
+                                <!-- Variables Rules -->
+                                <div class="subtopic">
+                                    <h5>Variables Rules - </h5>
+                                    <ul>
+                                        <li>Variables names are case sensitive; "a" & "A" is different.</li>
+                                        <li>Only letters, digits, underscore ( _ ) and $ is allowed. (not even space)
+                                        </li>
+                                        <li>Only a letter, underscore ( _ ) or $ should be 1st character.</li>
+                                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#reserved_words"
+                                                target="_blank">Reserved words</a> cannot be variable names.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- let, const & var -->
+                                <div class="subtopic">
+                                    <h5>let, const & var -</h5>
+                                    <ul>
+                                        <li>Let : Variable cannot be re-declared but can be updated. A block scope
+                                            variable.</li>
+                                        <li>Const : Variable cannot be re-declared or updated. A block scope variable.
+                                        </li>
+                                        <li>Var : Variable can be re-declared & updated. A global scope variable.</li>
+                                    </ul>
+                                </div>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables"
+                                    target="_blank">👉🏻 Click here to read more about Variables...</a>
+                            </div>
+                        </li>
+
+                        <!-- Data Types -->
+                        <li>
+                            <div class="topic">
+                                <h4>Data Types-</h4>
+                                <p>JavaScript provides different data types to hold different types of values. There are
+                                    two types of data types in JavaScript.</p>
+                                <p>1. Primitive data type</p>
+                                <p>2. Non-primitive (reference) data type</p>
+
+                                <!-- Primitive data type -->
+                                <div class="subtopic">
+                                    <h5>Primitive data type</h5>
+                                    <ul>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#null_type">
+                                                Null</a> - represents null i.e. no value at all</li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#undefined_type">
+                                                undefined</a> - represents undefined value</li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type">
+                                                Boolean</a> - represents boolean value either false or true</li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#number_type">
+                                                Number</a> - represents numeric values e.g. 100</li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type">
+                                                String</a> - represents sequence of characters e.g. "hello"</li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type">
+                                                Bigint</a></li>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#symbol_type">
+                                                Symbol</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Non-Primitive data type -->
+                                <div class="subtopic">
+                                    <h5>Non-primitive (reference) data type</h5>
+                                    <ul>
+                                        <li><a
+                                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Object</a>
+                                            - represents instance through which we can access members (Collection of
+                                            values)</li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+                                    target="_blank">👉🏻 Click here to read more about Data Types...</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Operators & Conditional Statements -->
+                <li>
+                    <div class="chapterName">
+                        <h3>Operators & Conditional Statements</h3>
+                    </div>
+                    <ul>
+                        <!-- Operators -->
+                        <li>
+                            <div class="topic">
+                                <h4>Operators-</h4>
+                                <p>Used to perform some operation on data</p>
+
+                                <!-- Arithmetic Operators -->
+                                <div class="subtopic">
+                                    <h5> Arithmetic Operators- </h5>
+                                    <ul>
+                                        <li>Add (+)</li>
+                                        <li>Subtract (-)</li>
+                                        <li>Multiply(*)</li>
+                                        <li>Divide ( / )</li>
+                                        <li>Modulus (%) </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Assignment Operators -->
+                                <div class="subtopic">
+                                    <h5> Assignment Operators- </h5>
+                                    <ul>
+                                        <li> = </li>
+                                        <li> += </li>
+                                        <li> -+ </li>
+                                        <li> *= </li>
+                                        <li> %= </li>
+                                        <li> **= </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Unary Operators -->
+                                <div class="subtopic">
+                                    <h5> Unary Operators- </h5>
+                                    <ul>
+                                        <li>Increment ( ++ )</li>
+                                        <li>Decrement ( -- )</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Comparison Operators -->
+                                <div class="subtopic">
+                                    <h5> Comparison Operators- </h5>
+                                    <ul>
+                                        <li>Equal to (=) </li>
+                                        <li>Not equal to (!=) </li>
+                                        <li>Equal to & type (===) </li>
+                                        <li>Not equal to & type (!==)</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Logical Operators -->
+                                <div class="subtopic">
+                                    <h5> Logical Operators- </h5>
+                                    <ul>
+                                        <li>Logical AND ( && )</li>
+                                        <li>Logical OR ( || ) </li>
+                                        <li>Logical NOT ( ! ) </li>
+                                    </ul>
+                                </div>
+
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators"
+                                    target="_blank">👉🏻 Click here to read more about Operator...</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Loops & Strings -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Loops & Strings
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Arrays -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Arrays
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Functions -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Functions
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Classes & Objects -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Classes & Objects
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Callbacks, Promises & Async-await -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Callbacks, Promises & Async-await
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Fetch API -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Fetch API
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Events in JS -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Events in JS
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- DOM - Part 1 -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            DOM - Part 1
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- DOM - Part 2 -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            DOM - Part 2
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Project - Building Game : Stone, Paper & Scissors -->
+                <li>
+                    <div class="chapterName">
+                        <h3>
+                            Project - Building Game : Stone, Paper & Scissors
+                        </h3>
+                    </div>
+
+                </li>
+            </ol>
+        </div>
+
+        <!-- <div class="otherImpTopics">
+            <ol>
+                <li>        
+                    <span class="bold">Console.log-</span>
+                    <span>Console.log is used to (print) a message to the console.</span>
+                    <p class="bold">👉🏻 Console.log("Hello coders");</p>
+                </li>
+            </ol>
+        </div> -->
+    </main>
+
+
+    <!-- <script src="Javascript/script.js"></script> -->
+    <script src="Javascript/myWork.js"></script>
 </body>
 
 </html>
